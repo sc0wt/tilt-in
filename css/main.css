@@ -118,12 +118,19 @@ a {
 #text{
     color:white;
     position: absolute;
-    font-size:25px;
+    font-size:50px;
     letter-spacing: 1px;
-    line-height: 1.5;
+    line-height: 1.25;
     width: 90%;
     top: 150px;
     padding:3%;
+}
+
+#arrows {
+	letter-spacing: 200px;
+	width: 100%;
+	text-align: center;
+	margin-left: 3%;
 }
 
 #header img {
