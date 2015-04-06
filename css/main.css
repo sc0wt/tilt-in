@@ -115,22 +115,24 @@ a {
     vertical-align: center;
 }
 
-#text{
+.text{
     color:white;
     position: absolute;
     font-size:50px;
     letter-spacing: 1px;
-    line-height: 1.25;
+    line-height: 1.5;
     width: 90%;
     top: 150px;
     padding:3%;
 }
 
-#arrows {
-	letter-spacing: 200px;
-	width: 100%;
-	text-align: center;
-	margin-left: 3%;
+.text a {
+	float: right;
+	padding-top: 30px;
+}
+
+.text a:hover {
+	color:white;
 }
 
 #header img {
@@ -142,11 +144,12 @@ a {
 
 }
 
-.container {
+#container {
 	width: 100%;
     height:auto;
 	clear: right;
-    background-color: #F8F6F6;
+    overflow-x: hidden;
+    z-index: 1;
 	
 }
 
@@ -155,22 +158,67 @@ a {
 	width: 100%;
 	height: 9000px;
 	display: block;
+	position:absolute;
+	overflow-x: hidden;
+	z-index: -1;
+}
+
+
+
+.blue {
 	background: -webkit-linear-gradient(#000099 5%, #0033CC 40%, white 30%, #F8F6F6 90%); /* For Safari 5.1 to 6.0 */
 	background: -o-linear-gradient(#000099, #FFE0E0, #F8F6F6); /* For Opera 11.1 to 12.0 */
 	background: -moz-linear-gradient(#000099, #0033CC, #F8F6F6); /* For Firefox 3.6 to 15 */
 	background: linear-gradient(#000099, #0033CC,white,#FFD633); /* Standard syntax */
 }
 
+.black {
+	background: -webkit-linear-gradient(rgb(10,20,10) 5%, rgb(20,30,20) 40%, rgb(30,40,30) 5%); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#000099, #FFE0E0, #F8F6F6); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#000099, #0033CC, #F8F6F6); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#000099, #0033CC,white,#FFD633); /* Standard syntax */
+}
+
+
+.fader {
+	opacity: 0;
+	font-size: 10em;
+	text-align: center;
+	padding-top: 100px;
+	overflow-x: hidden;
+	color: #000099;
+}
+
+.caption {
+	font-size: 10px;
+	font-family: monospace;
+	letter-spacing: .15em;
+	line-height: 120%;
+	color: #000099;
+	float:left;
+}
+
+.fader img {
+	width: auto;
+	height:auto;
+	overflow: hidden;
+	padding: 30px;
+}
+
+
+
 #footer {
 	width: auto;
 	font-family: sans-serif;
     position:relative;
+    margin-top: 9000px;
 
 }
 
 
 
 #footer ul {
+	padding-top: 30px;
 	list-style-type: none;
 	font-size: 30px;
 	margin-left: 10%;
