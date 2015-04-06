@@ -184,7 +184,7 @@ a {
 	opacity: 0;
 	font-size: 10em;
 	text-align: center;
-	padding-top: 100px;
+	padding-top: 10px;
 	overflow-x: hidden;
 	color: #000099;
 }
@@ -200,9 +200,9 @@ a {
 
 .fader img {
 	width: auto;
-	height:auto;
+	height:700px;
 	overflow: hidden;
-	padding: 30px;
+	padding: 100px 10px 30px 10px;
 }
 
 
