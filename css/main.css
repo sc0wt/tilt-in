@@ -195,7 +195,7 @@ a {
 	letter-spacing: .15em;
 	line-height: 120%;
 	color: #000099;
-	float:left;
+	/* float:left; */
 }
 
 .fader img {
