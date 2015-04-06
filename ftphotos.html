@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Tilt-in</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	</head>
+
+	<body>
+		
+		<div ID="container">
+		
+			<div ID="header">
+			<a href="http://tilt-in.info"><img src="IMGS/tilt_1.gif"></a>
+			</div
+  	
+	  		<div class="fader">&emsp;</div>
+	  		<div class="fader">&emsp;</div>
+	  		<div class="fader">Flicker Tonic<br>2015</div>
+	  		<div class="fader caption"><img src="IMGS/FT/VV_1.png"><br>Rotating vertical venetian blinds, Bluebeard mobile</div>
+	  		<div class="fader caption"><img src="IMGS/FT/VV_Detail_3_500px.png"><br>Rotating vertical venetian blinds</div>
+	  		<div class="fader caption"><img src="IMGS/FT/VV_Detail_500px.png"><br>Rotating vertical venetian blinds</div>
+	  		<div class="fader caption"><img src="IMGS/FT/VV_and_bluebeard_1000px.png"><br>Rotating vertical venetian blinds, Bluebeard mobile</div>
+	  		<div class="fader caption"><img src="IMGS/FT/VV_detail_2_1000px.png"><br>Rotating vertical venetian blinds</div>
+	  		<div class="fader caption"><img src="IMGS/FT/mobiles_1_1000px.png"><br>Flock mobile, Capillary mobile</div>
+	  		<div class="fader caption"><img src="IMGS/FT/mobile_and_ladder_and_lily.png"><br>Flock mobile, rotating horizontal blinds</div>
+	  		<div class="fader caption"><img src="IMGS/FT/lightbox_1_500px.png"><br>moire lightbox</div>
+			<div class="fader caption"><img src="IMGS/FT/mellow_yellow_500px.png"><br>Mellow Yellow</div>
+			<div class="fader caption"><img src="IMGS/FT/shape_stack_detail_2_1000px.png"><br>Shape Stack</div>
+			<div class="fader caption"><img src="IMGS/FT/shape_stack_detail_3_1000px.png"><br>Shape Stack</div>
+			<div class="fader caption"><img src="IMGS/FT/shelf_Group_1000px.png"><br>Capillary Mobile, Shards, Mellow Yellow</div>
+			<div class="fader caption"><img src="IMGS/FT/tristan_and_lily_1000px.png"><br></div>
+			<div class="fader">&emsp;</div>
+
+
+
+	  		
+  		
+  	
+	  	</div>
+  	
+  		<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.js'></script>  
+
+      <script>
+	    $(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.fader').each( function(i){
+           
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},300);
+                    
+		            }
+		            
+		        }); 
+		    
+		    });
+		    
+		});
+	</script>
+
+	</body>
+
+</html>
