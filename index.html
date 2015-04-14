@@ -1,46 +1,56 @@
-<!DOCTYPE html>
-<html>
 
-	<head>
-		<title>Tilt-in</title>
-		<meta charset="UTF-8">
-		<link rel="stylesheet" type="text/css" href="css/main.css">
-		<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	</head>
-	<body>
-		
-		<div ID="container">
+<html>
+<head>
+	<link href='http://fonts.googleapis.com/css?family=Dosis|Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+ <link href='http://fonts.googleapis.com/css?family=Amiri:400,700' rel='stylesheet' type='text/css'>
+
+	<title>Tilt-in</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+	<script src="./js/javascript-video-scrubber.js" type="text/javascript"></script>
+	<link type="text/css" rel="stylesheet" href="./css/styles.css" />
+	<script type="text/javascript">
+		<!--//
+
+		totalFrames = 103; // the number of images in the sequence of JPEG files (this could be calculated server-side by scanning the frames folder)
+
+		$(document).ready(function() {
+			resizeAdjustments(); // adjust the size of video placeholder image to fit the screen and keep aspect ratio (zoom crop)
+		});
+
+		//-->
+	</script>
+</head>
+<link href='http://fonts.googleapis.com/css?family=Cabin:400,700' rel='stylesheet' type='text/css'>
+<body 
+		onload="resizeAdjustments();" onresize="resizeAdjustments();" onorientationchange="resizeAdjustments();">
+	
+	<!-- overlay grid pattern (optional)  <div id="overlay"></div> -->
+
+	
+ 
+	
+	<!-- placeholder image for video (required) -->
+	<img id="video" src="./1/frames/images_000000.jpg" alt="" />
+	
+	<!-- preload the video frames (required) -->
+	<script type="text/javascript">
+		<!--//
+		// image filenames in frames folder should be "image_000000.jpg" through "image_000098.jpg"
+		for(i = 0; i < totalFrames; i++) { // loop for each image in sequence
+			images[i] =  new Image(); // add image object to array
+			images[i].src = "./1/frames/images_"+pad(i, 6)+".jpg"; // set the source of the image object
+		}
+		//-->
+	</script>
 		
 		<div ID="header">
-			<img src="IMGS/tilt_1.gif">
-		</div>
-		
-		<div class="gradient blue">
+			<a href="lightbox.html"><img src="./1/images/tilt_1.gif"></a>
 		</div>
 
-		<div class="text">
-		
-			<u>Flicker Tonic</u> is the debut collection from <u>TILT</u>, the joint practice of Lily Clark and Tristan Scow. The two designers share an interest in shaping meditative environments through objects that both produce and interact with light. <u>Flicker Tonic</u> relies on the viewer to complete each piece through careful, sustained looking. With the help of automated processes, the laser cut mobiles, lamps, and programable blinds magnify subtle interactions between light and shadow. The inspiration for <u>Flicker Tonic</u> comes from a statement made by the Italian designer, Ettore Sottsass: "One very simple idea: to design a lamp means to design the environment - to design the environment means to favor consciousness.” 
-			<br>
-			<a href="ftphotos.html">View the Collection</a>
-			
+		<div id="centertext">Flicker Tonic is the debut collection from Tilt, the collaborative studio practice of Lily Clark and Tristan Scow.
 		</div>
 		
-		
+	
 
-		<div ID="footer">
-			<ul>
-				<li>March 28 to May 22</li>
-				<li>Pinkard Gallery</li>
-				<li>5:00&#8212;7:00 pm</li>
-			</ul>		
-		</div>
-		
-		
-		</div>
-		
-		
-		
-	</body>
-	<script src="app/javascript.js"></script>
+</body>
 </html>

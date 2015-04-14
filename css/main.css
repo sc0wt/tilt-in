@@ -96,6 +96,12 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+@font-face {
+  font-family: Kamilla;
+  src: url(Kamilla_preview.otf);
+  
+}
+
 a {
 	text-decoration: none;
 	color: black;
@@ -184,12 +190,24 @@ a {
 	opacity: 0;
 	font-size: 20em;
 	/* font-family: "Footlight MT Light"; */
-	font-family: Onyx;
+	font-family: Kamilla;
 	text-align: center;
 	line-height: 100%;
 	padding-top: 10px;
 	overflow-x: hidden;
-	color: #000099;
+	color: #e6e6fa;
+}
+
+img.fader {
+	width: 500px;
+	margin-left: 25%;
+
+}
+
+img.fader.double {
+	float: left;
+	width: 40%;
+
 }
 
 .caption {
@@ -200,6 +218,7 @@ a {
 	line-height: 120%;
 	color: #000099;
 	opacity:0;
+
 	/* float:left; */
 }
 
@@ -207,16 +226,6 @@ a {
 	opacity: 1;
 }
 
-.fader img {
-	width: auto;
-	height:700px;
-	overflow: hidden;
-	padding: 100px 10px 30px 10px;
-}
-
-.fader .double img {
-	float: left;
-}
 
 
 
