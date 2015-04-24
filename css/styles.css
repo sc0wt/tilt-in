@@ -1,6 +1,6 @@
 @font-face {
-  font-family: Kamilla;
-  src: url(Kamilla_preview.woff);
+  font-family: RB;
+  src: url('RB.ttf');
   
 }
 
@@ -128,7 +128,6 @@ img#video {
 	padding:40px;
 	font-weight:normal;
 	width:35%;
-	font-family: Kamilla;
 	height:300px;
 	display: inline-block;
 	position: relative;
@@ -151,26 +150,56 @@ img#video {
 	text-align: right;
 	color:white;
 	letter-spacing: 2px;
-	font-family: Kamilla;
+
 
 }
 
+
 #centertext{
-	padding:50px;
 	height:300px;
-	width: 60%;
-	margin-left: 30%;
-	margin-top: 300px;
+	width: 65%;
+	margin-left: 1%;
+	margin-top: 400px;
 	display: inline-block;
 	position: relative;
 	z-index: 999;
-	font-size: 4em;
-	line-height: 110%;
+	font-size: 60px;
+	line-height: 70px;
 	text-align: left;
 	color:white;
 	letter-spacing: 2px;
-	font-family: Kamilla;
+	font-family: RB;
 }
 
+#collection{
+	width:100%;
+    
+}
+#viewcollection{
+	width: 100px;
+	text-align:center;
+	position: relative;
+	display: inline-block;
+	margin-bottom:200px;
+	margin-right:40px;
+	background-color: yellow;
+    color:red;
+    font-size: 11px;
+    font-family: RB;
+    text-transform: uppercase;
+    padding:20px;
+    letter-spacing: 1px;
+    z-index: 99999;
+    border-radius: 110px;
+}
 
+#viewcollection:hover{
+	
+}
+#viewcollection:active{
+	
+}
+#viewcollection:visited{
+	
+}
 

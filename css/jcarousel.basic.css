@@ -1,0 +1,112 @@
+body{
+    background-color:white;
+}
+
+#wrapper {
+    width:100vw;
+    height: auto;
+
+
+
+}
+.jcarousel-wrapper {
+    margin: 30px auto 30px;
+    position: relative;
+    width: 1400px;
+    height: auto;
+    background-color: black;
+
+}
+
+
+/** Carousel **/
+
+.jcarousel {
+    position: relative;
+    width: auto;
+    margin-left: auto;
+    overflow-x: hidden;
+}
+
+.jcarousel ul {
+    width: 200000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.jcarousel li {
+    float: left;
+}
+
+/** Carousel Controls **/
+
+.jcarousel-control-prev,
+.jcarousel-control-next {
+    position: absolute;
+    top: 45%;
+    /*width: 10vw;*/
+    padding:0 30px 0 30px;
+    height: 10vw;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font:6em Arial, sans-serif;
+
+}
+
+.jcarousel-control-prev {
+    left: 50px;
+    top:600px;
+
+}
+
+.jcarousel-control-next {
+    right: 50px;
+    top:600px;
+}
+
+.jcarousel-control-prev:hover span,
+.jcarousel-control-next:hover span {
+    display: block;
+    color: black;
+}
+
+.jcarousel-control-prev.inactive,
+.jcarousel-control-next.inactive {
+    cursor: default;
+    display: none;
+}
+
+@media screen and (min-width: 600px){
+    .jcarousel-control-prev .jcarousel-control-next{
+        top:0px;
+
+    }
+}
+
+/** Carousel Pagination **/
+
+.jcarousel-pagination {
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+}
+
+.jcarousel-pagination a {
+    text-decoration: none;
+    display: inline-block; 
+    font-size: 11px;
+    line-height: 14px;
+    min-width: 14px;
+    border-radius: 14px;
+    padding: 3px;
+    text-align: center;
+    margin-right: 2px;
+
+}
+
+.jcarousel-pagination a.active {
+
+}

@@ -101,24 +101,71 @@ textarea {
   src: url(Kamilla_preview.otf);
   
 }
+@font-face {
+  font-family: RB;
+  src: url('RB.ttf');
+}
+
 
 a {
 	text-decoration: none;
 	color: black;
 }
 
+/*.flickertonic{
+    font-size:100px;
+    font-family: RB;
+    text-align: center;
+    line-height: 80px;
+    margin-top: 330px;
+    padding-bottom: 100px;
+    overflow-x: hidden;
+    overflow-y:hidden;
+    color: #e6e6fa;
+}*/
+
+.flickertonic{
+    position: fixed;
+    top: 40%;
+    font-size:100px;
+    font-family: RB;
+    text-align: center;
+    line-height: 80px;
+    overflow-x: hidden;
+    overflow-y:hidden;
+    color: #e6e6fa;
+    z-index: 9999;
+}
+
+
+@media screen and (min-width: 600px) {
+  .flickertonic {
+    font-size:200px; 
+    line-height: 180px;
+    position: relative;
+    text-align: center;
+
+
+}
+}
 
 #header {
     color:white;
     font-size:35px;
     letter-spacing: 1px;
     line-height: 1.5;
-	width: 30%;
+	width: 400px;
 	height: auto;
     overflow: hidden;
 	position: fixed;
     top: 0;
     vertical-align: center;
+}
+
+@media screen and (min-width:600px){
+    .header{
+        width:180px;
+    }
 }
 
 .text{
@@ -151,50 +198,104 @@ a {
 }
 
 #container {
+    background-color: #ADC2FF;
 	width: 100%;
     height:auto;
 	clear: right;
-    overflow-x: hidden;
+    padding-bottom:100px;
+    overflow: hidden;
     z-index: 1;
 	
+}
+
+@media screen and (min-width: 600px) {
+  .container {
+    background-color: #ADC2FF;
+    width: 100%;
+    height:520px;
+    clear: right;
+    overflow: hidden;
+    z-index: 1;
+
+}
+}
+
+#container2 {
+    background-color: white;
+    padding:100px;
+    max-width: 1070px;
+    margin: 0 auto;
+    overflow: hidden;
+    z-index: 1;
+    
+}
+
+#container2 .footeritem {
+    width:100%;
+    border-left: 2px solid;
+    border-color:#ADC2FF;;
+    float: left;
+    padding-left:30px;
+}
+
+
+
+@media screen and (min-width: 600px) {
+  #container2 .footeritem {
+    width:33.3%;
+    border-left: 2px solid;
+    border-color:#ADC2FF;;
+    float: left;
+    padding-left:30px;
+   /* padding:100px;*/
+}
+}
+
+
+#container3 {
+    background-color: #ADC2FF;
+    width: 100%;
+    clear: right;
+    padding-bottom:300px;
+    overflow: hidden;
+    z-index: 1;
+    
+}
+
+@media screen and (min-width: 600px) {
+  .container3{
+    background-color: #ADC2FF;
+    width: 100%;;
+    clear: right;
+    overflow: hidden;
+    z-index: 1;
+
+}
 }
 
 .gradient {
     margin-top:0px;
 	width: 100%;
-	height: 9000px;
+	height: auto;
 	display: block;
 	position:absolute;
 	overflow-x: hidden;
-	z-index: -1;
+	z-index: 99;
 }
 
 
-
-.blue {
-	background: -webkit-linear-gradient(#000099 5%, #0033CC 40%, white 30%, #F8F6F6 90%); /* For Safari 5.1 to 6.0 */
-	background: -o-linear-gradient(#000099, #FFE0E0, #F8F6F6); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(#000099, #0033CC, #F8F6F6); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(#000099, #0033CC,white,#FFD633); /* Standard syntax */
-}
-
-.black {
-	background: -webkit-linear-gradient(rgb(10,20,10) 5%, rgb(20,30,20) 40%, rgb(30,40,30) 5%); /* For Safari 5.1 to 6.0 */
-	background: -o-linear-gradient(#000099, #FFE0E0, #F8F6F6); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(#000099, #0033CC, #F8F6F6); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(#000099, #0033CC,white,#FFD633); /* Standard syntax */
-}
 
 
 .fader {
 	opacity: 0;
-	font-size: 20em;
+	font-size: 280px;
 	/* font-family: "Footlight MT Light"; */
-	font-family: Kamilla;
+	font-family: RB;
 	text-align: center;
 	line-height: 100%;
 	padding-top: 10px;
 	overflow-x: hidden;
+    overflow-y:hidden;
 	color: #e6e6fa;
 }
 
@@ -207,6 +308,35 @@ img.fader {
 img.fader.double {
 	float: left;
 	width: 40%;
+
+}
+
+
+
+.image{
+    width:100%;
+    height:300px;
+    position: relative;
+
+}
+.image-small{
+    width:30%;
+    margin:50px;
+    display:inline-block;
+
+
+}
+.image-extrasmall{
+    width:10%;
+    margin:50px;
+    display:inline-block;
+    padding-top: 30px;
+
+}
+
+.image-large{
+    width:100%;
+    padding-top: 50px;
 
 }
 
@@ -323,12 +453,12 @@ img.fader.double {
  * Hide visually and from screen readers, but maintain layout
  */
 
+ * Cle
 .invisible {
     visibility: hidden;
 }
 
-/*
- * Clearfix: contain floats
+/*arfix: contain floats
  *
  * For modern browsers
  * 1. The space content is one way to avoid an Opera bug when the
@@ -363,8 +493,14 @@ img.fader.double {
 		text-align: center;
 		padding-top: 10px;
 		overflow-x: hidden;
-		color: #000099;
+		color: red;
 	}
+@media screen and (min-width: 600px) {
+  .masthead {
+    color: green;
+
+}
+}
 	
 	.caption {
 		font-size: 20px;
@@ -467,4 +603,260 @@ img.fader.double {
     h3 {
         page-break-after: avoid;
     }
+}
+
+
+.projectlinks{
+    position: relative;
+    display: block;
+    width:100%;
+    z-index: 999;
+
+}
+
+.projectlinks a{
+    color:black;
+    font-size: 10px;
+    letter-spacing: 2px;
+    display: block;
+    text-transform: uppercase;
+    padding-right:20px;
+    font-family: RB;
+    text-align: left;
+}
+
+.projectlinks a:hover{
+    text-decoration: underline;
+
+}
+
+.projectlinks a:active{
+    text-decoration: underline;
+
+
+}
+.projectlinks a:visited{
+    text-decoration: underline;
+
+
+}
+
+@media screen and (min-width: 600px) {
+  .projectlinks a{
+    text-align: left;
+    font-size: 20px;
+    display: block;
+    margin-top:0px;
+}
+}
+.extracontainer{
+    position: relative; 
+}
+
+.extralinks{
+   
+
+}
+
+.extralinks a{
+    color:black;
+    font-size: 15px;
+    letter-spacing: 2px;
+    line-height: 27px;
+    padding-right:20px;
+    font-family: RB;
+    text-align: left;
+    display:block;
+
+
+}
+
+.extralinks a:hover{
+
+}
+
+.extralinks a:active{
+    
+}
+
+.extralinks a:visited{
+    
+}
+
+
+.projectsecondlink{
+    font-size: 24px;
+    font-family: RB;
+    text-align: right;
+    text-transform: uppercase;
+    position: absolute;
+    margin-top:40px;
+    margin-left:-40px;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+    width:100%;
+    font-color: white;
+    z-index: 99999;
+    text-decoration:none;
+}
+
+
+.projectsecondlink:hover::after{
+    cursor: pointer;
+   /* content:'→';*/
+    display:block;
+    content:'→→→';
+    font-size: 24px;
+    color:yellow;
+    text-decoration:none;
+
+}
+
+.projectsecondlink:active{
+    text-decoration: underline;
+
+
+}
+.projectsecondlink:visited{
+    text-decoration: underline;
+
+
+}
+
+.other{
+    display: inline;
+    right:20px;
+    top:50px;
+    z-index: 99999;
+    position: relative;
+    padding:14px;
+    border: white solid 2px;
+    color:white;
+    font-size: 14px;
+    font-family: RB;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border-radius: 110px;
+    padding:14px;
+   
+}
+
+.play {
+    position: absolute;
+    top: 30px;
+    right: 0px;
+}
+
+
+.other:hover{
+    color:blue;
+
+}
+
+.other:active{
+    color:blue;
+}
+
+.other:visited{
+    color:blue;
+ 
+}
+
+@media screen and (min-width: 600px) {
+  .other {
+    text-align: right;
+    top:0px;
+    display: inline;
+    margin-right:10px;
+    z-index: 99999;
+    position: relative;
+    padding:14px;
+    border: white solid 2px;
+    color:white;
+    font-size: 14px;
+    font-family: RB;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border-radius: 110px;
+    padding:14px;
+}
+}
+.projcontainer{
+    width:100%;
+    height:50px;
+    
+}
+
+@media screen and (min-width: 600px) {
+  .projcontainer {
+    height:100px;
+}
+}
+
+.projtitle{
+    font-family: RB;
+    font-size: 40px;
+    color:black;
+    /*margin: 300px -300px 0 0;*/
+    margin-top:30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+  .projtitle {
+    font-family: RB;
+    font-size: 6em;
+    /*margin: 300px -300px 0 0;*/
+    margin-top:30px;
+    text-align: center;
+}
+}
+
+.projdescription{
+    font-family: RB;
+    font-size: 30px;
+    color:black;
+    line-height: 35px;
+    margin-top:30px;
+    width:60%;
+    text-align: left;
+    padding-bottom:50px;
+}
+
+.navleft{
+    position: fixed;
+    left: 30px;
+    bottom: 30px;
+    display: inline;
+    width: 200px;
+    font-size: 15px;
+    text-transform: uppercase;
+    line-height: 30px;
+    font-family: RB;
+    
+}
+
+.leftlink{
+    color: #e6e6fa;
+    padding-left:10px;
+
+}
+
+.leftlink:hover{
+    color:green;
+    border-left:2px solid green;
+}
+
+.leftlink:active{
+  color:yellow;
+}
+
+.leftlink:visited{
+ 
+}
+
+@media screen and (min-width: 600px) {
+  .navleft {
+}
 }

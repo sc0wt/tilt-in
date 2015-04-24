@@ -1,26 +1,36 @@
-$(function(){
-    $('#lala_nav').data('size','big');
-});
+(function($) {
+    $(function() {
+        $('.jcarousel').jcarousel();
 
-$(window).scroll(function(){
-    if($(document).scrollTop() > 0)
-    {
-        if($('#lala_nav').data('size') == 'big')
-        {
-            $('#lala_nav').data('size','small');
-            $('#lala_nav').stop().animate({
-                height:'40px'
-            },600);
-        }
-    }
-    else
-    {
-        if($('#lala_nav').data('size') == 'small')
-        {
-            $('#lala_nav').data('size','big');
-            $('#lala_nav').stop().animate({
-                height:'100px'
-            },600);
-        }  
-    }
-});
+        $('.jcarousel-control-prev')
+            .on('jcarouselcontrol:active', function() {
+                $(this).removeClass('inactive');
+            })
+            .on('jcarouselcontrol:inactive', function() {
+                $(this).addClass('inactive');
+            })
+            .jcarouselControl({
+                target: '-=1'
+            });
+
+        $('.jcarousel-control-next')
+            .on('jcarouselcontrol:active', function() {
+                $(this).removeClass('inactive');
+            })
+            .on('jcarouselcontrol:inactive', function() {
+                $(this).addClass('inactive');
+            })
+            .jcarouselControl({
+                target: '+=1'
+            });
+
+        $('.jcarousel-pagination')
+            .on('jcarouselpagination:active', 'a', function() {
+                $(this).addClass('active');
+            })
+            .on('jcarouselpagination:inactive', 'a', function() {
+                $(this).removeClass('active');
+            })
+            .jcarouselPagination();
+    });
+})(jQuery);
