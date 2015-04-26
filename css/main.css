@@ -844,8 +844,8 @@ img.fader.double {
 }
 
 .leftlink:hover{
-    color:green;
-    border-left:2px solid green;
+    color:black;
+    border-left:2px solid black;
 }
 
 .leftlink:active{
