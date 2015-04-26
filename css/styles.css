@@ -203,3 +203,87 @@ img#video {
 	
 }
 
+.other{
+    display: inline;
+    right:20px;
+    z-index: 99999;
+    position: relative;
+    padding:14px;
+    border: white solid 3px;
+    color:white;
+    font-size: 14px;
+    font-family: RB;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.play {
+    position: absolute;
+    top: 30px;
+    right: 0px;
+}
+
+
+a.other:hover{
+    color:black;
+
+}
+
+a.other:active{
+    color:white;
+}
+
+a.other:visited{
+    color:white;
+ 
+}
+
+#mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 9000;
+  background-color: white;
+  display: none;
+}
+
+.window {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 400px;
+  height: 100px;
+  display: none;
+  z-index: 9999;
+  padding: 50px;
+  border: black solid 3px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#dialog {
+  width: 700px;
+  height: 300px;
+  font-family: RB, sans-serif;
+  font-size: 2em;
+  background: white;
+  color: black;
+}
+
+#popupfoot {
+  font-size: 3em;
+  position: absolute;
+  bottom: 0px;
+  width: auto;
+  right: 20px;
+  padding: 30px;
+}
+
+a.close.agree {
+	text-decoration: none;
+	color: black;
+	}
+
+

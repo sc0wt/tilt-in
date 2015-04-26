@@ -140,7 +140,7 @@ a {
 
 @media screen and (min-width: 600px) {
   .flickertonic {
-    font-size:200px; 
+    font-size:100px; 
     line-height: 180px;
     position: relative;
     text-align: center;
@@ -730,13 +730,13 @@ img.fader.double {
     z-index: 99999;
     position: relative;
     padding:14px;
-    border: white solid 2px;
+    border: white solid 3px;
     color:white;
     font-size: 14px;
     font-family: RB;
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    border-radius: 110px;
+    border-radius: 5px;
     padding:14px;
    
 }
@@ -749,16 +749,16 @@ img.fader.double {
 
 
 .other:hover{
-    color:blue;
+    color:black;
 
 }
 
 .other:active{
-    color:blue;
+    color:white;
 }
 
 .other:visited{
-    color:blue;
+    color:white;
  
 }
 
@@ -771,13 +771,13 @@ img.fader.double {
     z-index: 99999;
     position: relative;
     padding:14px;
-    border: white solid 2px;
+    border: white solid 3px;
     color:white;
     font-size: 14px;
     font-family: RB;
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    border-radius: 110px;
+    border-radius: 5px;
     padding:14px;
 }
 }
