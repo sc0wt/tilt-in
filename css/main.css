@@ -124,7 +124,7 @@ a {
     color: #e6e6fa;
 }*/
 
-.flickertonic{
+#flickertonic {
     position: fixed;
     top: 40%;
     font-size:100px;
@@ -139,7 +139,7 @@ a {
 
 
 @media screen and (min-width: 600px) {
-  .flickertonic {
+  #flickertonic {
     font-size:100px; 
     line-height: 180px;
     position: relative;

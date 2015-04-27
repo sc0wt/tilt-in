@@ -7,17 +7,14 @@
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="./css/main.css">
         <link rel="stylesheet" type="text/css" href="./css/jcarousel.basic.css">
-        <script type="text/javascript" src="./js/jquery/jquery.js"></script>
-        <script type="text/javascript" src="./js/jquery/jquery.jcarousel.min.js"></script>
-        <script type="text/javascript" src="./js/jcarousel.basic.js"></script>
-        <script src='./js/okshadow.js'></script>
+       
 	</head>
 
 	<body>
 		
 <div ID="container">
 
-<div class="flickertonic">flicker tonic</div>
+<div ID="flickertonic">flicker tonic</div>
 	 <div class="jcarousel-wrapper">
                 <div class="jcarousel">
                     <ul>
@@ -101,24 +98,28 @@
 
 
   	
-  		<script>
-  			$(function(){
-  				$('.flickertonic').okshadow({
-			          color: 'white',
-			          xFactor: 8000,
-			          yFactor: 8000,
-			         /*  fuzzmin: .001, */
-			          textShadow: true,
-			          transparent: true,
-			          
-			        });
-			    });
-		</script>
+  		
 
   		<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.js'></script>
-		<script type="text/javascript" src="../../vendor/jquery/jquery.js"></script>
-        <script type="text/javascript" src="../../dist/jquery.jcarousel.min.js"></script>
-        <script type="text/javascript" src="jcarousel.basic.js"></script>
+		<script type="text/javascript" src="./js/jquery/jquery.js"></script>
+        <script type="text/javascript" src=".js/jquery/jquery.jcarousel.min.js"></script>
+        <script type="text/javascript" src="./js/jcarousel.basic.js"></script>
+        <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.js'></script>
+        <script src='js/okshadow.js'></script>
+        
+        <script>
+        	$(function(){
+        		$('#flickertonic').okshadow({
+			          color: 'white',
+			          xFactor: 1000,
+			          yFactor: 1000,
+			          fuzzmin: .0009,
+			          textShadow: true,
+			          transparent: true,
+          
+			          });
+		          });
+		</script>
 
 	</body>
 
