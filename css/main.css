@@ -201,7 +201,7 @@ a {
 }
 
 #container {
-    background-color: #ADC2FF;
+    background-color: #F1F4F6;
 	width: 100%;
     height:630px;
 	clear: right;
@@ -214,7 +214,6 @@ a {
 
 @media screen and (min-width: 600px) {
   .container {
-    background-color: #ADC2FF;
     width: 100%;
     height:20px;
     clear: right;
