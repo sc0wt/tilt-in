@@ -126,8 +126,9 @@ a {
 
 #flickertonic {
     position: fixed;
-    top: 100px;
-    font-size:100px;
+    font-size:70px;
+    top:300px;
+    left:30px;
     font-family: RB;
     text-align: center;
     line-height: 80px;
@@ -140,7 +141,8 @@ a {
 
 @media screen and (min-width: 600px) {
   #flickertonic {
-    font-size:100px; 
+    font-size:80px; 
+    top:-20px;
     line-height: 180px;
     position: relative;
     text-align: center;
@@ -160,6 +162,7 @@ a {
 	position: fixed;
     top: 0;
     vertical-align: center;
+    z-index: 9999;
 }
 
 @media screen and (min-width:600px){
@@ -200,7 +203,7 @@ a {
 #container {
     background-color: #ADC2FF;
 	width: 100%;
-    height:auto;
+    height:630px;
 	clear: right;
     padding-bottom:300px;
     overflow: hidden;
@@ -213,7 +216,7 @@ a {
   .container {
     background-color: #ADC2FF;
     width: 100%;
-    height:520px;
+    height:20px;
     clear: right;
     overflow: hidden;
     z-index: 1;
@@ -233,10 +236,8 @@ a {
 
 #container2 .footeritem {
     width:100%;
-    border-left: 2px solid;
-    border-color:#ADC2FF;;
     float: left;
-    padding-left:30px;
+
 }
 
 
@@ -244,10 +245,8 @@ a {
 @media screen and (min-width: 600px) {
   #container2 .footeritem {
     width:33.3%;
-    border-left: 2px solid;
-    border-color:#ADC2FF;;
     float: left;
-    padding-left:30px;
+
    /* padding:100px;*/
 }
 }
@@ -336,6 +335,12 @@ img.fader.double {
 }
 
 .image-large{
+    width:100%;
+    padding-top: 0px;
+
+}
+
+.image-large2{
     width:100%;
     padding-top: 50px;
 
@@ -617,17 +622,17 @@ img.fader.double {
 
 .projectlinks a{
     color:black;
-    font-size: 10px;
+    font-size: 13px;
     letter-spacing: 2px;
     display: block;
     text-transform: uppercase;
-    padding-right:20px;
     font-family: RB;
     text-align: left;
 }
 
 .projectlinks a:hover{
-    text-decoration: underline;
+    padding-left:10px;
+    border-left:2px solid black;
 
 }
 
@@ -642,10 +647,11 @@ img.fader.double {
 
 }
 
+
 @media screen and (min-width: 600px) {
   .projectlinks a{
     text-align: left;
-    font-size: 20px;
+    font-size: 18px;
     display: block;
     margin-top:0px;
 }
@@ -661,7 +667,7 @@ img.fader.double {
 
 .extralinks a{
     color:black;
-    font-size: 15px;
+    font-size: 18px;
     letter-spacing: 2px;
     line-height: 27px;
     padding-right:20px;
@@ -673,6 +679,7 @@ img.fader.double {
 }
 
 .extralinks a:hover{
+    text-decoration: underline;
 
 }
 
@@ -733,7 +740,7 @@ img.fader.double {
     padding:14px;
     border: white solid 3px;
     color:white;
-    font-size: 14px;
+    font-size: 18px;
     font-family: RB;
     text-transform: uppercase;
     letter-spacing: 1.5px;
@@ -744,9 +751,18 @@ img.fader.double {
 
 .play {
     position: absolute;
+    top: 130px;
+    right: 130px;
+}
+@media screen and (min-width: 600px) {
+  .play {
+    position: absolute;
     top: 30px;
     right: 0px;
+
+  }
 }
+
 
 
 .other:hover{
@@ -796,11 +812,10 @@ img.fader.double {
 
 .projtitle{
     font-family: RB;
-    font-size: 40px;
+    font-size: 60px;
     color:black;
     /*margin: 300px -300px 0 0;*/
-    margin-top:30px;
-    margin-bottom: 30px;
+    margin-top:130px;
     text-align: center;
 }
 
@@ -839,7 +854,7 @@ img.fader.double {
 }
 
 .leftlink{
-    color: #e6e6fa;
+    color: black;
     padding-left:10px;
 
 }
@@ -861,3 +876,8 @@ img.fader.double {
   .navleft {
 }
 }
+
+.jcarousel{
+margin-top:-210px;
+}
+
