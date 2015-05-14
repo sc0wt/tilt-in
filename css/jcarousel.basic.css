@@ -52,18 +52,18 @@ body{
     text-align: center;
     color: white;
     text-decoration: none;
-    font:5em Arial, sans-serif;
+    font:2em Arial, sans-serif;
 
 }
 
 .jcarousel-control-prev {
-    left: 50px;
+    left: 20px;
     top:400px;
 
 }
 
 .jcarousel-control-next {
-    right: 50px;
+    right: 20px;
     top:400px;
 }
 

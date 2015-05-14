@@ -611,6 +611,7 @@ img.fader.double {
 }
 
 
+
 .projectlinks{
     position: relative;
     display: block;
@@ -630,18 +631,18 @@ img.fader.double {
 }
 
 .projectlinks a:hover{
-    padding-left:10px;
-    border-left:2px solid black;
+    
+    text-decoration: underline;
 
 }
 
 .projectlinks a:active{
-    text-decoration: underline;
+ color:black;
 
 
 }
 .projectlinks a:visited{
-    text-decoration: underline;
+   color:black;
 
 
 }
@@ -880,3 +881,38 @@ img.fader.double {
 margin-top:-210px;
 }
 
+
+.information{
+    font-family: RB;
+    font-size: 30px;
+    color:black;
+    line-height: 50px;
+    margin-top:200px;
+    width:80%;
+    text-align: center;
+    padding:20px;
+}
+
+@media screen and (min-width: 600px) {
+  .information {
+  	font-family: RB;
+    font-size: 40px;
+    color:black;
+    line-height: 60px;
+    margin-top:200px;
+    width:90%;
+    text-align: center;
+    padding:50px;
+}
+}
+
+.contact{
+    font-family: RB;
+    font-size: 40px;
+    color:black;
+    line-height:60px;
+    margin-top:330px;
+    width:100%;
+    text-align: center;
+    padding-bottom:50px;
+}
