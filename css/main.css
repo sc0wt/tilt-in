@@ -125,13 +125,13 @@ a {
 }*/
 
 #flickertonic {
-    position: fixed;
-    font-size:70px;
-    top:300px;
-    left:30px;
+    position: relative;
+    font-size:80px;
+    top:220px;
+    text-align: center;
     font-family: RB;
     text-align: center;
-    line-height: 80px;
+    line-height: 70px;
     overflow-x: hidden;
     overflow-y:hidden;
     color: #e6e6fa;
@@ -141,8 +141,8 @@ a {
 
 @media screen and (min-width: 600px) {
   #flickertonic {
-    font-size:80px; 
-    top:-20px;
+    font-size:170px; 
+    top:200px;
     line-height: 180px;
     position: relative;
     text-align: center;
@@ -152,10 +152,6 @@ a {
 }
 
 #header {
-    color:white;
-    font-size:35px;
-    letter-spacing: 1px;
-    line-height: 1.5;
 	width: 400px;
 	height: auto;
     overflow: hidden;
@@ -168,6 +164,7 @@ a {
 @media screen and (min-width:600px){
     .header{
         width:180px;
+
     }
 }
 
@@ -261,6 +258,17 @@ a {
     
 }
 
+
+#container4 {
+    background-color: #ADC2FF;
+    width: 100%;
+    clear: right;
+    padding-bottom:0px;
+    overflow: hidden;
+    z-index: 1;
+    
+}
+
 @media screen and (min-width: 600px) {
   .container3{
     background-color: #ADC2FF;
@@ -343,6 +351,19 @@ img.fader.double {
     width:100%;
     padding-top: 50px;
 
+}
+
+.image-large3{
+    width:100%;
+    margin-top: 0px;
+
+}
+
+@media screen and (min-width: 600px) {
+  .image-large3 {
+    margin-top:-380px;
+
+}
 }
 
 .caption {
@@ -622,7 +643,7 @@ img.fader.double {
 
 .projectlinks a{
     color:black;
-    font-size: 13px;
+    font-size: 18px;
     letter-spacing: 2px;
     display: block;
     text-transform: uppercase;
